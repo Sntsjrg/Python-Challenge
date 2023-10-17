@@ -43,3 +43,17 @@ print("-------------------------")
 print(f"Total Months: {total_months}")
 print(f"Total: ${net_total}")
 print(f"Average Change: ${average_change:.2f}")
+
+# Specify the file to write to
+output_path = os.path.join("Analysis", "new.txt")
+
+# Open the file using "write" mode. Specify the variable to hold the contents
+with open(output_path, 'w', newline ="") as outputfile:
+    writer = csv.writer(outputfile)
+
+    #Output text
+    writer.writerow(["Financial Analysis"])
+    writer.writerow(["------------------------"])
+    writer.writerow([f"Total Months: {total_months}"])
+    writer.writerow([f"Total: ${net_total}"])
+    writer.writerow([f"Average Change: ${average_change:.2f}"])
