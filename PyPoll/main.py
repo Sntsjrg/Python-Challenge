@@ -50,7 +50,7 @@ print(f"Winner: {winner}")
 print("------------------------")
 
 # Specify the file to write to
-output_path = os.path.join("Analysis", "new.csv")
+output_path = os.path.join("Analysis", "new.txt")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w', newline ="") as outputfile:
